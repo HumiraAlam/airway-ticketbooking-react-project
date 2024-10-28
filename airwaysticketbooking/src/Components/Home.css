@@ -39,10 +39,7 @@ body {
 /* Hero Section */
 .hero-section {
   height: 80vh;
-  background-image: url('/assets/banner.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
   display: flex;
   justify-content: center;
   align-items: center;
