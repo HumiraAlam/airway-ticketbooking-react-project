@@ -1,28 +1,26 @@
-import React from 'react'
+import React from "react";
+import "./Navbar.css"; // CSS for styling
+import { Flag, FlagIcon, Globe, Search, User } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <div>
-      <nav className="navbar">
-        <div className="logo">
-          <img src="/assets/logo.png" alt="Qatar Airways" />
-        </div>
-        <ul className="nav-links">
-          <li>
-            <a href="#">Book</a>
-          </li>
-          <li>
-            <a href="#">Travel Info</a>
-          </li>
-          <li>
-            <a href="#">Privilege Club</a>
-          </li>
-          <li>
-            <a href="#">Help</a>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-  )
+    <nav className="navbar">
+      <img src="/assets/logo.png" className="navbar-logo" />
+      <img src="/assets/oneworld_logo.svg" className="navbar-logo"  />
+      <ul className="navbar-links">
+        <li>Explore</li>
+        <li>Book</li>
+        <li>Experience</li>
+        <li>Privilege Club</li>
+      </ul>
+      <div className="navbar-icons">
+        <Search/>
+        <span>Help</span>
+        <Globe/>
+        <span>EN</span>
+       <User/>
+        <span>Log in | Sign up</span>
+      </div>
+    </nav>
+  );
 }

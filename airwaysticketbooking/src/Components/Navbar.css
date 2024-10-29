@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute; /* Position over the hero banner */
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Ensure it appears above the hero image */
+  color: #ffffff; /* Text color to contrast with background */
+  background-color: rgba(0, 0, 0,0.07);
+}
+
+.navbar-links li,
+.navbar-icons span {
+  color: #ffffff; /* Ensure navbar links are visible */
+  font-size: 18px;
+  
+}
+
+
+
+.navbar-logo {
+  height: 40px;
+  
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.navbar-icons span {
+  cursor: pointer;
+}
