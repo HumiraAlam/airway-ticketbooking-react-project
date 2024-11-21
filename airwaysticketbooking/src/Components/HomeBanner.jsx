@@ -7,7 +7,16 @@ export default function HomeBanner() {
       <div className="home-content">
         <h1>Explore Our Member Offers</h1>
         <p>Not a member? Join today.</p>
-        <button className="home-button">Book now</button>
+        <a
+          href="#"
+          class="home-button"
+          aria-label="Book now"
+          target="_self"
+          role="button"
+        >
+          Book now
+        </a>
+        
       </div>
     </div>
   );

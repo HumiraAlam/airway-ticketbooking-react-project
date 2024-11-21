@@ -4,9 +4,9 @@ import { Flag, FlagIcon, Globe, Search, User } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
-      <img src="/assets/logo.png" className="navbar-logo" />
-      <img src="/assets/oneworld_logo.svg" className="navbar-logo"  />
+    <div className="navbar">
+      <img src="/assets/logo.svg" className="navbar-logo" />
+      <img src="/assets/oneworld_logo.svg" className="navbar-logo" />
       <ul className="navbar-links">
         <li>Explore</li>
         <li>Book</li>
@@ -14,13 +14,13 @@ export default function Navbar() {
         <li>Privilege Club</li>
       </ul>
       <div className="navbar-icons">
-        <Search/>
+        <Search />
         <span>Help</span>
-        <Globe/>
+        <Globe />
         <span>EN</span>
-       <User/>
+        <User />
         <span>Log in | Sign up</span>
       </div>
-    </nav>
+    </div>
   );
 }

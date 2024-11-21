@@ -1,0 +1,133 @@
+.results-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .route {
+    font-size: 18px;
+    color: #6b6b6b;
+}
+
+.route span {
+    color: #b0003a;
+}
+
+.date-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.date-option {
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.date-option.active {
+    font-weight: bold;
+    color: #b0003a;
+    border-bottom: 2px solid #b0003a;
+}
+
+.results-count,
+.fare-info {
+    text-align: center;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+.flights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flight-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.flight-details {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.timing strong {
+    font-size: 18px;
+}
+
+.route-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.route-info span {
+    font-weight: bold;
+}
+
+.fare-section {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.fare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fare p {
+    margin: 0;
+}
+
+.fare-amount {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.special-offer {
+    color: #b0003a;
+    font-size: 12px;
+}
+
+.select-button {
+    padding: 8px 12px;
+    border: 1px solid #b0003a;
+    border-radius: 5px;
+    color: #b0003a;
+    background-color: white;
+    cursor: pointer;
+}
+
+.select-button:hover {
+    background-color: #b0003a;
+    color: white;
+}
