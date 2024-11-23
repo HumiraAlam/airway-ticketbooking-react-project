@@ -316,12 +316,16 @@ const FlightBooking = () => {
       </div>
 
       {/* Actions */}
-      <div className="form-actions">
+      {/* <div className="form-actions">
         <button className="promo-button">
           <PlusCircle className="icon" />
           Add promo code
         </button>
         <button className="search-button">Search Flights</button>
+      </div> */}
+
+      <div>
+      <FormActions onSearch={handleSearch} disabled={isLoading} />
       </div>
     </div>
   );
