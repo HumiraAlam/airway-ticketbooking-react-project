@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Plane, Calendar, MapIcon, MapPin, PlusCircle } from "lucide-react";
 import "./FlightBooking.css";
 
-import Dates from "./Dates";
-import ChooseAirport from "./ChooseAirport";
+import Dates from "./Book Flight/Dates";
+import ChooseAirport from "./Book Flight/ChooseAirport";
 import { CommonAirports } from "./Data/CommonAirports";
-import Passengers from "./Passangers";
-import TripType from "./TrypType";
+import Passengers from "./Book Flight/Passangers";
+import TripType from "./Book Flight/TrypType";
 
 const FlightBooking = () => {
   //   State variables for trip type selection
@@ -27,7 +27,7 @@ const FlightBooking = () => {
     to: "",
     departDate: "",
     returnDate: "",
-    passengers: 1,
+    passengers: "1",
     class: "Economy",
   });
   const [showAirportList, setShowAirportList] = useState({
@@ -316,16 +316,16 @@ const FlightBooking = () => {
       </div>
 
       {/* Actions */}
-      {/* <div className="form-actions">
+      <div className="form-actions">
         <button className="promo-button">
           <PlusCircle className="icon" />
           Add promo code
         </button>
         <button className="search-button">Search Flights</button>
-      </div> */}
+      </div>
 
       <div>
-      <FormActions onSearch={handleSearch} disabled={isLoading} />
+        {/* <FormActions onSearch={handleSearch} disabled={isLoading} /> */}
       </div>
     </div>
   );
